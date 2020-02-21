@@ -1,0 +1,101 @@
+<!-- ASSESSMENT 2: React Debugging Challenge -->
+<!-- This React code is broken. Fix the code so the user can click through all the mood options and select their mood. -->
+<!-- In AWS: Click the "Preview" button to see a browser preveiw. Click the button with an arrow to open a new browser window. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Mood Meter</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+    <script type="text/babel">
+    // No need to change anything ABOVE this line ^
+
+
+
+      class App extends React.Component{
+        constructor(props){
+          super(props)
+          this.state = {
+            moods: ["😃", "😴", "😍", "🥺", "😡", "🤓", "🤪"],
+            currentMood: 0,
+            setMood: ""
+          }
+        }
+
+        nextMood = () => {
+          // destructuring currentMood and mood out of state
+          let { currentMood, moods } = this.state
+          if(currentMood === moods.length - 1){
+            this.setState({ currentMood: currentMood = 0 })
+          } else {
+            this.setState({ currentMood: currentMood + 1 })
+          }
+        }
+
+        setThisMood = () => {
+          this.setState({ setMood: this.state.moods[this.state.currentMood] })
+        }
+
+        render(){
+          return(
+            <div>
+              {/* Import Header component */}
+              <Header />
+              <MoodMeter
+                moodOptions={ this.state.moods[this.state.currentMood] }
+                next={ this.nextMood }
+                setThisMood={ this.setThisMood }
+                set={ this.state.setMood }
+              />
+            </div>
+          )
+        }
+      }
+
+      class Header extends React.Component{
+        render(){
+          return(
+            <div>
+              <h1>Welcome to the Mood Meter App</h1>
+            </div>
+          )
+        }
+      }
+
+      class MoodMeter extends React.Component{
+        render(){
+          return(
+            <div>
+              <h3>Mood Options:</h3>
+              <p style={{fontSize: "40px"}}>{ this.props.moodOptions }</p>
+              {/* pass this.props.next into onClick */}
+              <button onClick={ this.props.next }>Click Here For Next Mood Option</button>
+              <br />
+              <br />
+              <h3>Save your mood here!</h3>
+              <button onClick={ this.props.setThisMood }>Yup, this is me right now.</button>
+              <h3>My mood:</h3>
+              <p style={{fontSize: "40px"}}>{ this.props.set }</p>
+            </div>
+          )
+        }
+      }
+
+
+
+
+
+
+
+      // No need to change anything below this line
+      const domContainer = document.querySelector('#react-container')
+      ReactDOM.render(<App />, domContainer)
+    </script>
+  </body>
+</html>
