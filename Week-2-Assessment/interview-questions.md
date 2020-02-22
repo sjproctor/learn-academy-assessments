@@ -54,7 +54,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 Research and define the following terms to the best of your ability.
 
-- React lifecycle methods
-- API - application programming interface
-- event.preventDefault()
-- DOM events
+- React lifecycle methods - mounting and unmounting, componentDidMount() will run automatically when the page renders
+- API - application programming interface, a collection of JSON, a website for computers to access, a website has pages => an API has endpoints
+- event.preventDefault() - stops a form from automatically submitting, passes the control to the developer
+- DOM events - Document Object Model, the result of any action a user takes that changes the visual representation of the page such as touching the mouse, typing, scrolling or navigating a webpage
