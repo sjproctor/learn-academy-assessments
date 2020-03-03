@@ -12,3 +12,7 @@
 - [Code Challenge](./Week-3-Assessment/code-challenges.js)
 - [React Commenting Challenge](./Week-3-Assessment/react-commenting.js)
 - [Interview Prep Questions](./Week-3-Assessment/interview-questions.md)
+### Week 4
+- [JavaScript Code Challenge](./Week-4-Assessment/code-challenges.js)
+- [Ruby Code Challenges](./Week-4-Assessment/code_challenges.rb)
+- [Interview Prep Questions](./Week-4-Assessment/interview-questions.md)
