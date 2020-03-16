@@ -16,3 +16,11 @@
 - [JavaScript Code Challenge](./Week-4-Assessment/code-challenges.js)
 - [Ruby Code Challenges](./Week-4-Assessment/code_challenges.rb)
 - [Interview Prep Questions](./Week-4-Assessment/interview-questions.md)
+### Week 5
+- [JavaScript Code Challenge](./Week-5-Assessment/code-challenges.js)
+- [Rails Conceptual Questions](./Week-5-Assessment/rails-questions.md)
+- [Interview Prep Questions](./Week-5-Assessment/interview-questions.md)
+### Week 6
+- [JavaScript Code Challenge](./Week-6-Assessment/code-challenges.js)
+- [Rails Commenting Challenge](./Week-6-Assessment/rails-commenting.rb)
+- [Interview Prep Questions](./Week-6-Assessment/interview-questions.md)
