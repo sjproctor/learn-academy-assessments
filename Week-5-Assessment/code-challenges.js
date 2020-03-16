@@ -7,7 +7,6 @@ var secretCodeWord1 = "lackadaisical"
 var secretCodeWord2 = "gobbledygook"
 // Expected output: "g0bbl3dyg00k"
 
-<<<<<<< HEAD
 const encoder = (string) => {
   let code = string.split("").map(value => {
     if(value === "a"){
@@ -26,11 +25,6 @@ const encoder = (string) => {
 }
 console.log(encoder(secretCodeWord1))
 console.log(encoder(secretCodeWord2))
-=======
-
-
-
->>>>>>> e6d47ba1711b349858840dae18f8cd96f5b015b0
 
 // --------------------2) Create a function that takes in an array and returns all the words that have the letter a in them.
 
