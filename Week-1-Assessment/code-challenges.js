@@ -1,5 +1,4 @@
-// ASSESSMENT 1: INTRO TO JAVASCRIPT
-// Coding practical questions
+// ASSESSMENT 1: Coding practical questions
 
 // Please read all questions thoroughly
 // Psuedo coding is highly recommended
@@ -10,42 +9,56 @@
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
-
-const tempChecker = (temp) => {
-    if(temp === 212){
-        return `${temp} is at boiling point`
-    } else if(temp > 212){
-        return `${temp} is above boiling point`
-    } else if(temp < 212){
-        return `${temp} is below boiling point`
-    }
+// Looking for three outcomes - above, below, or exactly boiling
+const tempCheck = (number) => {
+  // exactly boiling first as it is the most specific
+  if(number === 212){
+    return `${number} is at boiling point.`
+  // below boiling
+  } else if(number < 212){
+    return `${number} is below boiling point.`
+  // above boiling
+  } else if(number > 212){
+    return `${number} is above boiling point.`
+  // catch all
+  } else {
+    return "Error"
+  }
 }
-console.log(tempChecker(temp1))
-console.log(tempChecker(temp2))
-console.log(tempChecker(temp3))
-
+console.log(tempCheck(temp1))
+console.log(tempCheck(temp2))
+console.log(tempCheck(temp3))
 
 // --------------------2) Create a function that multiplies each number in the array by 5 using a for loop.
 // Use the test variable provided below. Expected outcome: [15, 35, 0, 30, -45]
 
 var myNumbers1 = [3, 7, 0, 6, -9]
 
+// take in an array and return an array of modified numbers
 const mult5 = (array) => {
-    let newArray = []
-    for(let i=0; i<array.length; i++){
-        newArray.push(array[i]*5)
-    }
-    return newArray
+  // set up an empty array to push the numbers into
+  let newArray = []
+  // loop over the array and multiply the numbers by 5
+  for(let i=0; i<array.length; i++){
+      // push the result
+      newArray.push(array[i]*5)
+  }
+  // return the array
+  return newArray
 }
 console.log(mult5(myNumbers1))
+
 
 // --------------------3) Create a function that multiplies each number in the array by 5 using map.
 // Use the test variable provided below. Expected outcome: [40, -35, 0, 30, 10]
 
 var myNumbers2 = [8, -7, 0, 6, 2]
 
+// takes in an array and returns a new array
 const mult5WithMap = (array) => {
-    return array.map(value => value * 5)
+  // map over the array and mult each value by 5
+  // return the array
+  return array.map(value => value * 5)
 }
 console.log(mult5WithMap(myNumbers2))
 
@@ -57,15 +70,14 @@ var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
 
 const vowelKicker = (string) => {
-    let array = string.split("").filter(value => {
-        let v = value.toLowerCase()
-        return v !== "a" && v !== "e" && v !== "i" && v !== "o" && v !== "u"
-    })
-    return array.join("")
+  let array = string.split("").filter(value => {
+    let v = value.toLowerCase()
+    return v !== "a" && v !== "e" && v !== "i" && v !== "o" && v !== "u"
+  })
+  return array.join("")
 }
 console.log(vowelKicker(stringWithVowels1))
 console.log(vowelKicker(stringWithVowels2))
-
 
 
 // --------------------5) Expand the logic from #4 to inform your user if the variable passed into the vowel removal function is not a string.
@@ -75,20 +87,21 @@ var notAString1 = true
 var notAString2 = 42
 
 const vowelKickerExpanded = (string) => {
-    if(typeof string === "string"){
-        let array = string.split("").filter(value => {
-            let v = value.toLowerCase()
-            return v !== "a" && v !== "e" && v !== "i" && v !== "o" && v !== "u"
-        })
-        return array.join("")
-    } else {
-        return "Please enter a string."
-    }
+  if(typeof string === "string"){
+    let array = string.split("").filter(value => {
+      let v = value.toLowerCase()
+      return v !== "a" && v !== "e" && v !== "i" && v !== "o" && v !== "u"
+    })
+      return array.join("")
+  } else {
+    return "Please enter a string."
+  }
 
 }
 console.log(vowelKickerExpanded(notAString1))
 console.log(vowelKickerExpanded(notAString2))
 console.log(vowelKickerExpanded(stringWithVowels1))
+
 
 
 // --------------------6) Create a function that takes the toonimals array and returns an array with only the toon objects that are cats.
@@ -98,9 +111,9 @@ console.log(vowelKickerExpanded(stringWithVowels1))
 var toonimals = [ {name: "Itchy", animal: "mouse"}, {name: "Stimpy", animal: "cat"}, {name: "Daffy", animal: "duck"}, {name: "Scratchy", animal: "cat"}, {name: "Ren", animal: "dog"}, {name: "Felix", animal: "cat"}]
 
 const getCats = (array) => {
-    return array.filter(value => {
-        return value.animal === "cat"
-    })
+  return array.filter(value => {
+    return value.animal === "cat"
+  })
 }
 console.log(getCats(toonimals))
 
@@ -108,8 +121,9 @@ console.log(getCats(toonimals))
 // Expected output: "Itchy" "Daffy" "Ren"
 
 const getCatNames = (array) => {
-    let cats = array.filter(value => value.animal !== "cat")
-    return cats.map(value => value.name).join(" ")
+  let cats = array.filter(value => value.animal !== "cat")
+  let catNames = cats.map(value => value.name)
+  return catNames.join(" ")
 
 }
 console.log(getCatNames(toonimals))
