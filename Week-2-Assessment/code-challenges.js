@@ -23,6 +23,13 @@ console.log(divisibleBy3(num1))
 console.log(divisibleBy3(num2))
 console.log(divisibleBy3(num3))
 
+const divisibleBy3Ternary = (number) => {
+  return number % 3 === 0 ? `${number} is divisble by three` : `${number} is not divisible by three`
+}
+console.log(divisibleBy3Ternary(num1))
+console.log(divisibleBy3Ternary(num2))
+console.log(divisibleBy3Ternary(num3))
+
 
 
 // --------------------2) Create a function that takes in the randomNouns variable and returns an array with all the words capitalized.
@@ -54,7 +61,7 @@ console.log(sorter(mixedDataArray))
 
 var vowelTester1 = "learn"
 // Expected output: 1
-var vowelTester1 = "throw"
+var vowelTester2 = "throw"
 // Expected output: 3
 
 const vowelIndex = (string) => {
