@@ -23,6 +23,8 @@ console.log(divisibleBy3(num1))
 console.log(divisibleBy3(num2))
 console.log(divisibleBy3(num3))
 
+// --OR--
+
 const divisibleBy3Ternary = (number) => {
   return number % 3 === 0 ? `${number} is divisble by three` : `${number} is not divisible by three`
 }
@@ -65,8 +67,15 @@ var vowelTester2 = "throw"
 // Expected output: 3
 
 const vowelIndex = (string) => {
-  let vowels = [string.indexOf("a"), string.indexOf("e"), string.indexOf("i"), string.indexOf("o"), string.indexOf("u")]
-  return vowels.filter(vowel => vowel !== -1 ).sort()[0]
+  let vowels = [
+    string.indexOf("a"),
+    string.indexOf("e"),
+    string.indexOf("i"),
+    string.indexOf("o"),
+    string.indexOf("u")
+  ]
+  let idAllVowels = vowels.filter(vowel => vowel !== -1 )
+  return idAllVowels.sort()[0]
 }
 console.log(vowelIndex(vowelTester1))
 console.log(vowelIndex(vowelTester2))

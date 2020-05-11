@@ -4,7 +4,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 1. Why would you use the method super()?
 
-  Your answer:
+  Your answer: Super calls the constructor method in the parent class
 
   Researched answer:
 
@@ -12,7 +12,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 2. What is a virtual DOM?
 
-  Your answer:
+  Your answer: The level between the real DOM and the React application
 
   Researched answer:
 
@@ -20,7 +20,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 3. When creating a basic (stateless) class component in React, what are the necessary elements needed to display "Hello World" in the browser?
 
-  Your answer:
+  Your answer: class Name extends React.Component, render method, return, a JSX element
 
   Researched answer:
 
@@ -28,7 +28,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 4. What is JSX?
 
-  Your answer:
+  Your answer: The marriage of JavaScript and HTML
 
   Researched answer:
 
@@ -36,7 +36,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 5. What is state in React?
 
-  Your answer:
+  Your answer: An object that is created in the constructor and updated with the setState method, it allows for persistent storage in a component
 
   Researched answer:
 
@@ -44,7 +44,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 6. STRETCH: What is hoisting in JavaScript?
 
-  Your answer:
+  Your answer: The browser does a quick initial scan of the code. The assumption is that functions will all get called at some point. So to make the program run faster all the JavaScript methods get "hoisted" to the top of stack call
 
   Researched answer:
 
