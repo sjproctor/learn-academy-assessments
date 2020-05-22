@@ -27,9 +27,7 @@ var cubeAndSum2 = [0, 5, 10]
 
 const cubed = (array) => {
   let cubed = array.map(value => value**3)
-  let total = 0
-  cubed.map(value => total += value)
-  return total
+  return cubed.reduce((accumulator, value) => accumulator + value)
 }
 console.log(cubed(cubeAndSum1))
 console.log(cubed(cubeAndSum2))

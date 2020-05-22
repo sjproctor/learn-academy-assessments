@@ -8,8 +8,8 @@ fullArr2 = ['hello', 7, 23, -823, false, 78, nil, '67', 6, 'Number']
 # Expected output: [-823, 7, 23]
 
 def onlyOdds1 array
-  odds = array.filter do |value|
-    value.class == Integer && value%2 != 0
+  odds = array.select do |value|
+    value.class == Integer && value.odd?
   end
   odds.sort
 end
@@ -18,7 +18,7 @@ p onlyOdds1 fullArr2
 
 # --OR--
 def onlyOdds2 array
-  array.filter { |value| value.class == Integer && value%2 != 0 }.sort
+  array.select { |value| value.class == Integer && value%2 != 0 }.sort
 end
 p onlyOdds2 fullArr1
 p onlyOdds2 fullArr2
