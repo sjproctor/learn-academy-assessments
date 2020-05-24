@@ -9,6 +9,7 @@ fullArr2 = ['hello', 7, 23, -823, false, 78, nil, '67', 6, 'Number']
 
 def onlyOdds1 array
   odds = array.select do |value|
+    # class is different than typeof in that it literally returns the class
     value.class == Integer && value.odd?
   end
   odds.sort
@@ -30,14 +31,14 @@ class Bike
     @model = model
     @wheels = 2
     @frame_size = frame_size
-    @bell = bell
     @speed = 0
+    @bell = 'Beep beep!'
   end
   def get_info
     "The #{@model} bike has #{@wheels} wheels and a #{@frame_size} frame."
   end
   def bell
-    @bell = 'Beep beep!'
+    @bell = "The bell goes #{@bell}"
   end
   def speed
     @speed
@@ -90,3 +91,28 @@ p my_bike.speed
 
 # Expected output example: my_bike.pedal_faster 10 => 10
 # Expected output example: my_bike.brake 15 => 0
+
+
+
+# Add our own stretch challenge to play with the shovel operator
+
+class BikeRack
+  def initialize
+    @bike_list=[]
+  end
+  def add_bike bike
+    @bike_list << bike
+  end
+  def bike_rack_info
+    @bike_list
+  end
+end
+
+my_bike2 = Bike.new 'Beach crusier', '160cm'
+my_bike3 = Bike.new 'Beach crusier', '163cm'
+my_bike_rack = BikeRack.new
+my_bike_rack.add_bike my_bike.get_info
+my_bike_rack.add_bike my_bike2.get_info
+my_bike_rack.add_bike my_bike3.get_info
+
+p my_bike_rack.bike_rack_info

@@ -10,7 +10,7 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
-2. What are the three arguments that .map() can accept?
+2. What are the three arguments that .map() and .filter() can accept?
 
   Your answer: value, index, array - in that particular order
 
@@ -45,6 +45,17 @@ Answer the following questions. First, without external resources. Challenge you
 6. What are three options for creating responsive design?
 
   Your answer: Flexbox, media queries, em/rem/%, grid layout
+
+  rem/em both translate into pixels
+  All browsers have a small amount of base css
+  When you put plain old HTML in the browser the text has a base pixel - usually a 16 point font
+  So 1rem is that base font size
+  rem stands for root em
+
+  So em is a size that is relative to the current font size. Whatever the current font size may be.
+  So it could be the 16 point base font that is set by the browser or it could be a font that you set for your application.
+
+  Just a bit of fun history: I was looking up the difference between rem and em and I learned that em is not an acronym like I originally thought. The origin is a standardization of typeface based on capital letter M.
 
   Researched answer:
 

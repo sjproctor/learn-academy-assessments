@@ -3,9 +3,12 @@
 
 // --------------------1) Create a function that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
+// Fibonacci sequence is a series of numbers defined by an Italian mathematician named Leonardo of Pisa in 1202. The Fibonacci sequence can also be converted to the Golden Ratio which is found represented in Eucidian Geometry, Biology, Natural Sciences, as well as music and achitecture and is represented by the Greek letter phi (fi)
+// Each number is represented by n + n-1
+
 const getFib = (num) => {
   let fibArray = [1, 1]
-  for(let i=1; i<num; i++){
+  for(let i=1; i<num-1; i++){
     fibArray.push(fibArray[i]+fibArray[i-1])
   }
   return fibArray
@@ -33,7 +36,8 @@ var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 // Expected output: [-823, 7, 23]
 
 const onlyOddsSorted = (array) => {
-  return array.filter(value => typeof value === "number" && value%2 !== 0).sort((a, b) => (a - b))
+  let filtered = array.filter(value => typeof value === "number" && value%2 !== 0)
+  return filtered.sort((a, b) => (a - b))
 }
 console.log(onlyOddsSorted(fullArr1))
 console.log(onlyOddsSorted(fullArr2))
@@ -50,7 +54,7 @@ const getMiddle = (string) => {
   if(string.length%2 === 0){
     return string[string.length/2-1] + string[string.length/2]
   } else {
-    return string[string.length/2+.5]
+    return string[string.length/2-.5]
   }
 }
 console.log(getMiddle(middleLetters1))

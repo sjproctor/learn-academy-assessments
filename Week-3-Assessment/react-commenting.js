@@ -5,8 +5,8 @@
 
 // App.js
 class App extends Component{
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     // 1. Setting up the state object with one key:value pair
     this.state = {
       userInput: "",
