@@ -8,9 +8,12 @@ Answer the following questions. First, without external resources. Challenge you
 
   Researched answer:
 
+2. What does it mean if an application has CRUD? What does CRUD stand for?
+
+  CRUD is an acronym that stands for Create, Read, Update, Delete. CRUD is used to describe the full experience of user functionality within an application.
 
 
-2. What is a gem?
+2. (Not using this question) What is a gem?
 
   Your answer: A package of code functionality written by another developer made available to the Ruby community. Gems can be used to avoid "reinventing the wheel".
 
@@ -18,7 +21,12 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
-3. Why is it important to have validations in your application?
+3. What is a migration? Why would you use one?
+
+  Migrations describe the shape of the database. Migrations are used to make edits to the schema. Migrations are generated in the command line and run with the command $ rails db:migrate. It also allows for version control within an application.
+
+
+3. (Not using this question)  Why is it important to have validations in your application?
 
   Your answer: Validations prevent dirty data from being stored in your database. They also increase security by only saving qualified user information.
 
@@ -26,9 +34,12 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
+
 4. Describe a possible relationship between a model called Person and a model called Computer. Based on your description, which model would hold the foreign key?
 
   Your answer: A Person has_a Computer, a Computer belongs_to a Person. A Person has_many Computers, Computers belong_to a Person. A Person has_many Computers, a Computer has_many People. A Computer has_many People, a Person belong_to (is a user on) a Computer.
+
+  Foreign key always lives on the belongs_to side.
 
   Researched answer:
 
@@ -45,8 +56,8 @@ Answer the following questions. First, without external resources. Challenge you
 ## Looking Ahead: Terms for Next Week
 
 Research and define the following terms to the best of your ability.
-- RESTful routes
-- json
-- API
-- Endpoints
-- Strong params
+- RESTful routes - provides structure to define the http verbs and the routes to successfully provide CRUD actions
+- json - JavaScript Object Notation, collections of key:value pairs
+- API - Application Programming Interface is a website for computers
+- Endpoints - websites have pages while APIs have endpoints
+- Strong params - a controller method that is called by the post method that limits what is accepted by a user input

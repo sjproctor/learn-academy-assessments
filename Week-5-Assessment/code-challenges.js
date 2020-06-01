@@ -44,6 +44,49 @@ var hand2 = [5, 5, 3, 3, 4]
 var hand3 = [3, 3, 5, 3, 2]
 // Expected output: false
 
+const fullHouse = (array) => {
+  // add this line after the first forEach
+  let secondCard = null
+  let hand = {
+    card1: 0,
+    card2: 0
+  }
+  array.forEach(value => {
+    if(value === array[0]){
+      hand.card1 += 1
+    } else {
+      secondCard = value
+    }
+  })
+  array.forEach(value => {
+    if(value === secondCard){
+      hand.card2 += 1
+    }
+  })
+
+  console.log(hand)
+  if(hand.card1 === 3 && hand.card2 === 2){
+    return true
+  } else if(hand.card1 === 2 && hand.card2 === 3){
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log("hand1", fullHouse(hand1))
+console.log("hand2", fullHouse(hand2))
+console.log("hand3", fullHouse(hand3))
+
+
+
+
+
+
+
+
+
+
 const pokerWinner = (array) => {
   let singleCard1 = array[0]
   let cardCount1 = 0
@@ -72,6 +115,6 @@ const pokerWinner = (array) => {
   }
 }
 
-console.log(pokerWinner(hand1))
-console.log(pokerWinner(hand2))
-console.log(pokerWinner(hand3))
+// console.log(pokerWinner(hand1))
+// console.log(pokerWinner(hand2))
+// console.log(pokerWinner(hand3))

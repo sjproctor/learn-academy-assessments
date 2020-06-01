@@ -98,6 +98,14 @@ const minMax = (array) => {
 console.log(minMax(nums1))
 console.log(minMax(nums2))
 
+const minMax2 = (array) => {
+  array.sort((a, b) => a - b)
+  return [array[0], array[array.length - 1]]
+}
+console.log(minMax2(nums1))
+console.log(minMax2(nums2))
+
+
 // --------------------4) Create a function that takes in a string and returns a string with every other letter capitalized.
 
 var testString1 = "albatross"
@@ -133,6 +141,7 @@ const combineWithNoDup = (array1, array2) => {
 }
 console.log(combineWithNoDup(arr1, arr2))
 
+// rest parameter
 const combineWithNoDupSpread = (...array) => {
   // returns a 2d array, so we need to flatten it
   // there is a cool method in Ruby called flatten, there might be something like that in JS, but since we are exploring reduce, let's do more of that
