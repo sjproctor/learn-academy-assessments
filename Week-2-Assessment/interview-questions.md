@@ -54,9 +54,9 @@ Answer the following questions. First, without external resources. Challenge you
 
 Research and define the following terms to the best of your ability.
 
-- React lifecycle methods
-- API
-- event.preventDefault()
-- DOM events
-- http verbs
-- MVC
+- React lifecycle methods - methods that allow for the DOM to mount, update, and unmount throughout the life of a component
+- API - application programming interface, a website for computers that delivers information from a database through predetermined endpoints as JSON
+- event.preventDefault() - a built in React method that stops the DOM from re-rendering while an action is being performed
+- DOM events - any click, scroll, mouse event, that is registered to the screen or by the computer
+- http verbs - GET, POST, PUT, PATCH, DELETE, describing the action of a url request
+- MVC - Model, View, Controller, a programming philosophy that describes the responsibility of each piece of a program that will create a full stack website

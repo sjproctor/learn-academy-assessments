@@ -4,7 +4,7 @@
 // --------------------1) Create a function that takes in an array of objects and returns a sentence about each person with their names capitalized.
 
 var people = [{name: "ford prefect", occupation: "hitchhiker"}, {name: "zaphod beeblebrox", occupation: "president of the galaxy"}, {name: "arthur dent", occupation: "radio employee"}]
-// Expected output example: "Ford Prefect is a hitchhiker." "Zaphod Beeblebrox is the president of the galaxy." "Arthus Dent is a radio employee."
+// Expected output example: "Ford Prefect is a hitchhiker." "Zaphod Beeblebrox is a president of the galaxy." "Arthus Dent is a radio employee."
 
 const descripts = (array) => {
   let upcase = array.map(value => {

@@ -106,6 +106,12 @@ console.log(minMax2(nums1))
 console.log(minMax2(nums2))
 
 
+const nums = [1, 2, 3]
+Math.min(...nums)    // 1
+Math.max(...nums)    // 3
+
+
+
 // --------------------4) Create a function that takes in a string and returns a string with every other letter capitalized.
 
 var testString1 = "albatross"
