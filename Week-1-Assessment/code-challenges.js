@@ -62,6 +62,18 @@ const mult5WithMap = (array) => {
 }
 console.log(mult5WithMap(myNumbers2))
 
+// --------------------4) Create a function that takes in an array and returns an array with only the values at odd indexes.
+// Use the test variables provided below. Expected output: [ "Chai tea", "Mocha", "Double espresso" ]
+
+var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "Americano", "Double espresso"]
+
+const getOdds = (array) => {
+  return array.filter((value, index) => {
+    return index%2 !== 0
+  })
+}
+console.log(getOdds(coffeeRun))
+
 
 // --------------------4) Create a function that removes all the vowels from a string.
 // Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
