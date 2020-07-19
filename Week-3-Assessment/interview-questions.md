@@ -10,9 +10,9 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
-2. What are the three arguments that .map() and .filter() can accept?
+2. What is a DOM event?
 
-  Your answer: value, index, array - in that particular order
+  Your answer: Document Object Model events are actions that occur in JavaScript as result of a user interaction. Typically DOM events are combined with functions that are executed when the event occurs.
 
   Researched answer:
 
@@ -34,9 +34,9 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
-5. What is React.Fragment and why would you want to use it?
+5. What is React.Fragment (or <>) and why would you want to use it?
 
-  Your answer: The syntax for returning multiple JSX tags by wrapping them in a neutral outer tag, <> </> is a shorthand for React.Fragment that achieves the same result
+  Your answer: The syntax for returning multiple JSX tags by wrapping them in a neutral outer tag, <> </> is a shorthand for React.Fragment that achieves the same result, and it doesn't add any additional nodes to the HTML code
 
   Researched answer:
 
@@ -65,6 +65,6 @@ Answer the following questions. First, without external resources. Challenge you
 - Object oriented programming - a programming model that organizes software design around data, or objects, rather than functions and logic
 - irb - Interactive RuBy, a way to run Ruby code in the console
 - Instance variable - a variable declaration that begins with @ making the variable available to the entire scope of the class/instances of the class rather than just within a single method
-- Ruby hash - a dictionary-like collection of key:value pairs
+- Ruby - a dynamic, scripting, open-source, object-oriented programming language
 - Class relationships - is_a, has_a, has_many, belongs_to describes relationships between classes/model classes
 - Getter and Setter methods in Ruby - setters define an instance variable and getters return the value of an instance variable
