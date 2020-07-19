@@ -1,5 +1,5 @@
 # LEARN Academy Weekly Assessments
-## Build out of code challenges and short answers
+Build out of code challenges and short answers
 
 ### Week 1
 - [JavaScript Code Challenge](./Week-1-Assessment/code-challenges.js)
