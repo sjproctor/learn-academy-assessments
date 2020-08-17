@@ -21,6 +21,9 @@ class BlogPostsController < ApplicationController
   def new
   end
 
+  def edit
+  end
+
   def create
     # 5) creating a instance variable that will create a new blog post based on the params stated in the params method
     @post = BlogPost.create(blog_post_params)
@@ -45,7 +48,7 @@ class BlogPostsController < ApplicationController
   private
   def blog_post_params
     # 8) defines the attributes that can be given to the new blog_post entry on the form
-    params.require(:blog_post).permit(:title, :content)
+    params.permit(:title, :content)
   end
 
 end

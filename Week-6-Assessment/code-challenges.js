@@ -47,3 +47,11 @@ const deDup1 = (arr1, arr2) => {
   })
 }
 console.log(deDup1(testingArray3, testingArray4))
+
+const deDup2 = (...arrays) => {
+  let combo = arrays.reduce((accululator, value) => [...accululator, ...value])
+  return combo.filter((value, index) => {
+    return combo.indexOf(value) === index
+  })
+}
+console.log(deDup2(testingArray3, testingArray4))
