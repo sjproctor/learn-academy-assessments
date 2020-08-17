@@ -55,3 +55,12 @@ const deDup2 = (...arrays) => {
   })
 }
 console.log(deDup2(testingArray3, testingArray4))
+
+
+const noDups = (...arrays) => {
+  let combo = [].concat(...arrays)
+  return combo.filter((value, index) => {
+    return array.indexOf(value) === index
+  })
+}
+console.log(noDups(testingArray3, testingArray4))

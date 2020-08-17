@@ -45,7 +45,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   method="GET"    /users/edit/1 - shows a form for edit  
 
-  method="POST"   /users/ - create, adds a new user       
+  method="POST"   /users - create, adds a new user       
 
   method="PUT"    /users/1 - edits an existing user
 
