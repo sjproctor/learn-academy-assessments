@@ -3,7 +3,7 @@ Build out of code challenges and short answers
 
 ### Week 1
 - [JavaScript Code Challenge](./Week-1-Assessment/code-challenges.js)
-- [Testing Challenge](./Week-1-Assessment/js-testing.test.js)
+- [Testing Challenge](./Week-1-Assessment/testing-with-jest.test.js)
 - [Interview Prep Questions](./Week-1-Assessment/interview-questions.md)
 ### Week 2
 - [JavaScript Code Challenge](./Week-2-Assessment/code-challenges.js)

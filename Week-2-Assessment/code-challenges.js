@@ -63,47 +63,52 @@ console.log(sorter(mixedDataArray))
 
 var vowelTester1 = "learn"
 // Expected output: 1
-var vowelTester2 = "throw"
-// Expected output: 3
+var vowelTester2 = "academy"
+// Expected output: 0
+var vowelTester3 = "challenge"
+// Expected output: 2
 
 const vowelIndex = (string) => {
-  let vowels = [
-    string.indexOf("a"),
-    string.indexOf("e"),
-    string.indexOf("i"),
-    string.indexOf("o"),
-    string.indexOf("u")
-  ]
-  let idAllVowels = vowels.filter(vowel => vowel !== -1 )
-  return idAllVowels.sort()[0]
+  let vowels = string.split("").filter(value => {
+    let letter = value.toLowerCase()
+    return letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u'
+  })
+  return string.indexOf(vowels[0])
 }
 console.log(vowelIndex(vowelTester1))
 console.log(vowelIndex(vowelTester2))
+console.log(vowelIndex(vowelTester3))
 
 
 
 // --------------------5) Create a function that takes three arguments - two numbers and a mathematical operation (+, -, *, /) and performs the given calculation. If the input tries to divide by 0, return: "Can't divide by 0!"
 
 const calculator = (num1, operator, num2) => {
-  if(num2 === 0){
-    return "Can't divide by 0!"
-  } else if(operator === "+"){
+  if(operator === "+"){
     return num1 + num2
   } else if(operator === "-"){
     return num1 - num2
   } else if(operator === "*"){
     return num1 * num2
+  } else if(operator === "/" && num2 === 0){
+    return "Can't divide by 0!"
   } else if(operator === "/"){
     return num1 / num2
   }
 }
 
 // Uncomment and use the following console logs to test your function
-console.log(calculator(3, "*", 9))
+console.log(calculator(24000, "+", 601))
+// Expected output: 24601
+
+console.log(calculator(6, "*", 7))
+// Expected output: 42
+
+console.log(calculator(30, "-", 3))
 // Expected output: 27
 
-console.log(calculator(16, "+", 3))
-// Expected output: 19
+console.log(calculator(2850, "/", 3))
+// Expected output: 950
 
-console.log(calculator(89, "/", 0))
+console.log(calculator(101, "/", 0))
 // Expected output: "Can't divide by 0!"

@@ -74,10 +74,11 @@ var middleLetters2 = "rhinoceros"
 // For the odd numbers, the string hello is 5 letters, so I need to get the length divided by two that will give me 2.5, and I will always get a .5 from an odd number divided by two. So with that, the index of 2.5 is .5 higher than what I need. So, I can subtract .5 and get the middle index.
 
 const getMiddle = (string) => {
+  let mid = string.length / 2
   if(string.length%2 === 0){
-    return string[string.length/2-1] + string[string.length/2]
+    return string[mid - 1] + string[mid]
   } else {
-    return string[string.length/2-.5]
+    return string[Math.floor(mid)]
   }
 }
 console.log("middle 1:", getMiddle(middleLetters1))

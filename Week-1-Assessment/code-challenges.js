@@ -130,12 +130,11 @@ const getCats = (array) => {
 console.log(getCats(toonimals))
 
 // --------------------7) Using the toonimals variable from #6, create a function that returns only the names of the non-cats.
-// Expected output: "Itchy" "Daffy" "Ren"
+// Expected output: "Itchy Daffy Ren"
 
 const getCatNames = (array) => {
   let cats = array.filter(value => value.animal !== "cat")
-  let catNames = cats.map(value => value.name)
-  return catNames.join(" ")
-
+  console.log(cats)
+  return cats.map(value => value.name).join(" ")
 }
 console.log(getCatNames(toonimals))

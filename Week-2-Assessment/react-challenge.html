@@ -1,8 +1,11 @@
-<!-- ASSESSMENT 2: React Debugging Challenge -->
-<!-- This React code is broken. Fix the code so the user can click through all the mood options and select their mood. -->
-<!-- In AWS: Click the "Preview" button to see a browser preveiw. Click the button with an arrow to open a new browser window. -->
 
-<!-- Create a comment to show where your changes were made. -->
+<!-- ASSESSMENT 2: React Debugging Challenge -->
+
+<!-- This React code is broken. Fix the THREE bugs in the code so the user can click through all the mood options.
+To see this component, drag the file into the browser.
+HINT: Check the console in the browser developer tools for errors. -->
+
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -25,71 +28,40 @@
           super(props)
           this.state = {
             moods: ["😃", "😴", "😍", "🥺", "😡", "🤓", "🤪"],
-            currentMood: 0,
-            setMood: ""
+            currentMood: ""
           }
         }
 
-        nextMood = () => {
-          // destructuring currentMood and mood out of state
-          let { currentMood, moods } = this.state
-          if(currentMood === moods.length - 1){
-            this.setState({ currentMood: currentMood = 0 })
-          } else {
-            this.setState({ currentMood: currentMood + 1 })
-          }
-        }
-
-        setThisMood = () => {
-          this.setState({ setMood: this.state.moods[this.state.currentMood] })
+        handleMoodOptions = () => {
+          // 1a) can destructure mood from state (one way)
+          const { moods } = this.state
+          let randomIndex = Math.floor(Math.random() * this.state.moods.length )
+          // 1b) can add this.state to moods[randomIndex] (another way)
+          // this.setState({ currentMood: this.state.moods[randomIndex] })
+          this.setState({ currentMood: moods[randomIndex] })
         }
 
         render(){
           return(
-            <div>
-              {/* Import Header component */}
-              <Header />
-              <MoodMeter
-                moodOptions={ this.state.moods[this.state.currentMood] }
-                next={ this.nextMood }
-                setThisMood={ this.setThisMood }
-                set={ this.state.setMood }
-              />
-            </div>
-          )
-        }
-      }
-
-      class Header extends React.Component{
-        render(){
-          return(
-            <div>
+            <>
+            {/* Needs an enclosing tag */}
               <h1>Welcome to the Mood Meter App</h1>
-            </div>
-          )
-        }
-      }
 
-      class MoodMeter extends React.Component{
-        render(){
-          return(
-            <div>
               <h3>Mood Options:</h3>
-              <p style={{fontSize: "40px"}}>{ this.props.moodOptions }</p>
-              {/* pass this.props.next into onClick */}
-              <button onClick={ this.props.next }>Click Here For Next Mood Option</button>
-              <br />
-              <br />
-              <h3>Save your mood here!</h3>
-              <button onClick={ this.props.setThisMood }>Yup, this is me right now.</button>
-              <h3>My mood:</h3>
-              <p style={{fontSize: "40px"}}>{ this.props.set }</p>
-            </div>
+
+              <div style={{ fontSize: "40px", height: "50px"}}>
+                { this.state.currentMood }
+              </div>
+
+              {/* Needs a this on the method */}
+              <button onClick={ this.handleMoodOptions }>
+                Click Here For Next Mood option
+              </button>
+            </>
+
           )
         }
       }
-
-
 
 
 
