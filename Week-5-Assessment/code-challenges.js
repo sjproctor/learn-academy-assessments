@@ -220,3 +220,22 @@ const pokerWinner = (array) => {
 // console.log(pokerWinner(hand1))
 // console.log(pokerWinner(hand2))
 // console.log(pokerWinner(hand3))
+
+
+// Ryan's logic - Now I'm going to use a map function to look at each value in the array. It took some trouble shooting, but I knew I was going to want to pass the value and the array through the map function. Once inside, I would want to look at the original array and figure out how many times that value occurs in the array. I opted with a filter method, originally thinking I would have an array of arrays that had each value listed inside the number of times they occured. But then I realized I could just chain a length method at the end to output an array of the number of times each value shows up.
+
+// Basically it is going to look at each value in the array, compare it to the original array, and only return values that match the current values. The last method will count the length of that array, so we will end up with an array that gives the count of the element at each index.
+
+// This last part is a bit unelegant compared to the above logic, but I figured if the counts array has both a 3 and a 2 it must be a full house
+
+// const fullHouse = (array) => {
+//   counts = array.map((value, i, array) =>{
+//     return array.filter(val => (val === value)).length
+//   })
+//   return (counts.includes(3) && counts.includes(2) ?  true : false )
+// }
+// console.log(fullHouse(hand1))
+// console.log(fullHouse(hand2))
+// console.log(fullHouse(hand3))
+// console.log(fullHouse(['K', 'K', 'K', 2, 2]))
+// console.log(fullHouse(['A', 9, 9, 'A', 'A']))
