@@ -116,3 +116,82 @@ my_bike_rack.add_bike my_bike2.get_info
 my_bike_rack.add_bike my_bike3.get_info
 
 p my_bike_rack.bike_rack_info
+
+
+# OTHER OPTIONS FOR ASSESSMENT QUESTIONS
+
+
+
+# --------------------2) Create a method that takes in an array of words and a letter and returns all the words that contain that particular letter.
+
+beverages_array = ['coffee', 'tea', 'juice', 'water', 'soda water']
+letter_o = 'o'
+# Expected output: ['coffee', 'soda water']
+letter_a = 'a'
+# Expected output: ['tea', 'soda water']
+
+def finder(array, letter)
+  array.select{|word| word.include? letter}
+end
+p finder beverages_array, letter_o
+p finder beverages_array, letter_a
+p finder beverages_array, 'f'
+p finder beverages_array, 'j'
+
+
+# -------------------3) Create a method that takes in a string and removes all the vowels from the string. Use the test variables provided. HINT: Check out this resource: https://ruby-doc.org/core-2.6/String.html#method-i-delete
+
+album1 = 'Rubber Soul'
+# Expected output: 'Rbbr Sl'
+album2 = 'Sgt Pepper'
+# Expected output: 'Sgt Pppr'
+album3 = 'Abbey Road'
+# Expected output: 'bby Rd'
+
+def vowel_remover string
+  string.delete('aeiouAEIOU')
+end
+
+p vowel_remover album1
+p vowel_remover album2
+p vowel_remover album3
+
+# -------------------4) Create a method that takes in an array of numbers and returns the sum of the numbers. Use the test variables provided.
+
+nums_array1 = [42, 7, 27]
+# Expected output: 76
+
+nums_array2 = [25, 17, 47, 11]
+# Expected output: 100
+
+def sums array
+  array.sum
+end
+p sums nums_array1
+p sums nums_array2
+
+# -------------------5) Create a method that takes in a string and checks if the string is a palindrome. A palindrome is the same word spelled forwards or backwards. Use the test variables provided.
+
+is_palindrome1 = 'Racecar'
+# Expected output: 'Racecar is a palindrome'
+is_palindrome2 = 'LEARN'
+# Expected output: 'LEARN is not a palindrome'
+is_palindrome3 = 'Rotator'
+# Expected output: 'Rotator is a palindrome'
+
+# STRETCH
+is_palindrome4 = 'Was it a cat I saw'
+# Expected output: Was it a cat I saw is a palindrome'
+
+def palCheck string
+  if string.downcase.reverse.delete(' ') == string.downcase.delete(' ')
+    return "#{string} is a palindrome"
+  else
+    return "#{string} is not a palindrome"
+  end
+end
+
+p palCheck is_palindrome1
+p palCheck is_palindrome2
+p palCheck is_palindrome3
+p palCheck is_palindrome4
