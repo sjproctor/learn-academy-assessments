@@ -138,3 +138,37 @@ const getCatNames = (array) => {
   return cats.map(value => value.name).join(" ")
 }
 console.log(getCatNames(toonimals))
+
+// --------------------optional) Create a function that takes in an array of strings and returns the string with the most characters.
+// Expected output: "chopsticks"
+
+var utensils = ["fork", "knife", "tongs", "chopsticks", "skewer"]
+
+
+const lengthChecker = (array) => {
+  let anchor = array[0].length
+  let longest = null
+  array.forEach(value => {
+    if(value.length > anchor){
+      anchor = value.length
+      longest = value
+    }
+  })
+  return longest
+}
+console.log(lengthChecker(utensils))
+
+// --------------------7) Create a function that takes in an array of strings and returns an array with the last letter removed from each string.
+// Expected output: ["Luig", "Peac", "Toa", "Yosh"] ["Ink", "Blink", "Pink", "Clyd"]
+
+var mario = ["Luigi", "Peach", "Toad", "Yoshi"]
+var pacman = ["Inky", "Blinky", "Pinky", "Clyde"]
+
+
+const removeLast = (array) => {
+  return array.map(value => {
+    return value.slice(0, value.length-1)
+  })
+}
+console.log(removeLast(mario))
+console.log(removeLast(pacman))
