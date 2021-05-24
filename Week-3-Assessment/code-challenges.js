@@ -27,14 +27,14 @@ console.log(getFib(10))
 // So after the recursion has finished, we are left with the return [1, 1] from the if statement and a bunch of functions to execute.
 
 const getFibRecursion = (num) => {
-	if(num === 1){
-		return [1, 1]
-	} else {
-		let fibArray = getFibRecursion(num - 1)
-    console.log("num", num)
-    console.log(fibArray)
-  	return [...fibArray, fibArray[num-1] + fibArray[num-2]]
-	}
+  if(num === 1){
+    return [1, 1]
+  } else {
+    let fibArray = getFibRecursion(num - 1)
+  console.log("num", num)
+  console.log(fibArray)
+  return [...fibArray, fibArray[num-1] + fibArray[num-2]]
+  }
 }
 console.log(getFibRecursion(10))
 
