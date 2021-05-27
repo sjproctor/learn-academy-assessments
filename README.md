@@ -2,17 +2,12 @@
 Build out of code challenges and short answers
 
 ### Week 1
-- [JavaScript Code Challenge](./Week-1-Assessment/code-challenges.js)
-- [Testing Challenge](./Week-1-Assessment/testing-with-jest.test.js)
+- [JavaScript Code Challenges](./Week-1-Assessment/code-challenges.js)
+- [JavaScript Coding Concepts](./Week-1-Assessment/coding-concepts.js)
 - [Interview Prep Questions](./Week-1-Assessment/interview-questions.md)
 ### Week 2
-<<<<<<< HEAD
 - [JavaScript Code Challenges with Jest](./Week-2-Assessment/code-challenges.test.js)
 - [React Debugging Challenge](./Week-2-Assessment/react-challenge.html)
-=======
-- [JavaScript Code Challenge](./Week-2-Assessment/code-challenges.js)
-- [React Bug Fixing Challenge](./Week-2-Assessment/react-challenge.html)
->>>>>>> parent of a9ad325 (Update README.md)
 - [Interview Prep Questions](./Week-2-Assessment/interview-questions.md)
 ### Week 3
 - [JavaScript Code Challenge](./Week-3-Assessment/code-challenges.js)
