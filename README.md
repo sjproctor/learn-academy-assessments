@@ -2,19 +2,19 @@
 Build out of code challenges and short answers
 
 ### Week 1
-- [JavaScript Code Challenge](./Week-1-Assessment/code-challenges.js)
+- [JavaScript Code Challenges](./Week-1-Assessment/code-challenges.js)
 - [Testing Challenge](./Week-1-Assessment/testing-with-jest.test.js)
 - [Interview Prep Questions](./Week-1-Assessment/interview-questions.md)
 ### Week 2
-- [JavaScript Code Challenge](./Week-2-Assessment/code-challenges.js)
+- [JavaScript Code Challenges](./Week-2-Assessment/code-challenges.js)
 - [React Bug Fixing Challenge](./Week-2-Assessment/react-challenge.html)
 - [Interview Prep Questions](./Week-2-Assessment/interview-questions.md)
 ### Week 3
-- [JavaScript Code Challenge](./Week-3-Assessment/code-challenges.js)
-- [React Commenting Challenge](./Week-3-Assessment/react-commenting.js)
+- [JavaScript Code Challenges with Jest](./Week-3-Assessment/code-challenges.test.js)
+- [React Debugging Challenge](./Week-3-Assessment/react-debugging.html)
 - [Interview Prep Questions](./Week-3-Assessment/interview-questions.md)
 ### Week 4
-- [JavaScript Code Challenge](./Week-4-Assessment/code-challenges.js)
+- [JavaScript Code Challenges with Jest](./Week-4-Assessment/code-challenges.test.js)
 - [Ruby Code Challenges](./Week-4-Assessment/code_challenges.rb)
 - [Interview Prep Questions](./Week-4-Assessment/interview-questions.md)
 ### Week 5
