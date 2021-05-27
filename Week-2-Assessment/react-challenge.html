@@ -1,9 +1,10 @@
-
 <!-- ASSESSMENT 2: React Debugging Challenge -->
 
-<!-- This React code is broken. Fix the THREE bugs in the code so the user can click through all the mood options.
-To see this component, drag the file into the browser.
-HINT: Check the console in the browser developer tools for errors. -->
+<!-- This file contains a single React component in an HTML file. This React code is broken. Fix the THREE bugs in the code so the user can click through all the mood options. -->
+
+<!-- To see the component, drag this file into the browser. -->
+
+<!-- HINT: Check the console in the browser developer tools for errors. -->
 
 
 
@@ -33,18 +34,15 @@ HINT: Check the console in the browser developer tools for errors. -->
         }
 
         handleMoodOptions = () => {
-          // 1a) can destructure mood from state (one way)
-          const { moods } = this.state
           let randomIndex = Math.floor(Math.random() * this.state.moods.length )
-          // 1b) can add this.state to moods[randomIndex] (another way)
-          // this.setState({ currentMood: this.state.moods[randomIndex] })
-          this.setState({ currentMood: moods[randomIndex] })
+          // moods was not defined, this.state.moods.....
+          this.setState({ currentMood: this.state.moods[randomIndex] })
         }
 
         render(){
           return(
+            // Needed React Fragments, or any kind of element that will case the content
             <>
-            {/* Needs an enclosing tag */}
               <h1>Welcome to the Mood Meter App</h1>
 
               <h3>Mood Options:</h3>
@@ -52,19 +50,14 @@ HINT: Check the console in the browser developer tools for errors. -->
               <div style={{ fontSize: "40px", height: "50px"}}>
                 { this.state.currentMood }
               </div>
-
-              {/* Needs a this on the method */}
+              // handleMoodOptions was not defined, needed this.handleMoodOptions
               <button onClick={ this.handleMoodOptions }>
                 Click Here For Next Mood option
               </button>
             </>
-
           )
         }
       }
-
-
-
 
 
       // No need to change anything below this line

@@ -6,8 +6,8 @@ Build out of code challenges and short answers
 - [Testing Challenge](./Week-1-Assessment/testing-with-jest.test.js)
 - [Interview Prep Questions](./Week-1-Assessment/interview-questions.md)
 ### Week 2
-- [JavaScript Code Challenges](./Week-2-Assessment/code-challenges.js)
-- [React Bug Fixing Challenge](./Week-2-Assessment/react-challenge.html)
+- [JavaScript Code Challenges with Jest](./Week-2-Assessment/code-challenges.test.js)
+- [React Debugging Challenge](./Week-2-Assessment/react-challenge.html)
 - [Interview Prep Questions](./Week-2-Assessment/interview-questions.md)
 ### Week 3
 - [JavaScript Code Challenges with Jest](./Week-3-Assessment/code-challenges.test.js)

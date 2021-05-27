@@ -1,52 +1,58 @@
 # ASSESSMENT 2: Interview Practice Questions
 
-Answer the following questions. First, without external resources. Challenge yourself to answer from memory. Then, research the question to expand on your answer. Even if you feel you have answered the question completely on your own, there is always something more to learn.
+Answer the following questions.
 
-1. Why would you use the method super()?
+First, without external resources. Challenge yourself to answer from memory as if you were in a job interview.
 
-  Your answer: Super calls the constructor method in the parent class
+Then, research the question to expand on your answer. Even if you feel you have answered the question completely, there is always something more to learn. Write your researched answer in your OWN WORDS.
 
-  Researched answer:
+1. The built in method .map() takes predefined parameters. What are they? Which are required and which are optional?
 
+  Your answer:
 
-
-2. What is a virtual DOM?
-
-  Your answer: The level between the real DOM and the React application
-
-  Researched answer:
+  Researched answer: Three built in parameters: value, index, array, in that order, value is required, index and array are optional
 
 
 
-3. When creating a basic (stateless) class component in React, what are the necessary elements needed to display "Hello World" in the browser?
+2. What is object destructuring?
 
-  Your answer: class Name extends React.Component, render method, return, a JSX element
+  Your answer:
 
-  Researched answer:
+  Researched answer: Taking a object keys and set into variables, the pathway through the object to that particular key, unpacking the variable from the object
 
-
-
-4. What is JSX?
-
-  Your answer: The marriage of JavaScript and HTML
-
-  Researched answer:
+  let { innerKey } = object.outerKey
 
 
 
-5. What is state in React?
+3. Why would you use the method super()?
 
-  Your answer: An object that is created in the constructor and updated with the setState method, it allows for persistent storage in a component
+  Your answer:
 
-  Researched answer:
+  Researched answer: Passes information from the parent's constructor, super implies there is a parent class
+
+
+
+4. What is a React Fragment? Why would you use one?
+
+  Your answer:
+
+  Researched answer: Must return just one JSX elements, wraps all of the content returning from a component, doesn't add a node to the DOM
+
+
+
+5. What is JSX?
+
+  Your answer:
+
+  Researched answer: Marriage between JavaScript and HTML, created by React devs to render HTML to the DOM inside of a JS file
 
 
 
 6. STRETCH: What is hoisting in JavaScript?
 
-  Your answer: The browser does a quick initial scan of the code. The assumption is that functions will all get called at some point. So to make the program run faster all the JavaScript methods get "hoisted" to the top of stack call
+  Your answer:
 
-  Researched answer:
+  Researched answer: The browser does a quick initial scan of the code. The assumption is that functions will all get called at some point. So to make the program run faster all the JavaScript methods get "hoisted" to the top of stack call, which means a function can be called before it is defined
 
 
 
@@ -54,9 +60,12 @@ Answer the following questions. First, without external resources. Challenge you
 
 Research and define the following terms to the best of your ability.
 
-- React lifecycle methods - methods that allow for the DOM to mount, update, and unmount throughout the life of a component
-- API - application programming interface, a website for computers that delivers information from a database through predetermined endpoints as JSON
-- event.preventDefault() - a built in React method that stops the DOM from re-rendering while an action is being performed
-- DOM events - any click, scroll, mouse event, that is registered to the screen or by the computer
-- http verbs - GET, POST, PUT, PATCH, DELETE, describing the action of a url request
-- MVC - Model, View, Controller, a programming philosophy that describes the responsibility of each piece of a program that will create a full stack website
+1. React props: ability to pass down data from one component to another
+
+2. React lifecycle methods: events from creation to the end of the component
+
+3. Logic/smart component: manage data flow to other components, holds state
+
+4. Display/dumb component: UI focused
+
+5. DOM Events: event listeners, click events
