@@ -1,32 +1,22 @@
 # ASSESSMENT 3: Interview Practice Questions
 
-Answer the following questions. First, without external resources. Challenge yourself to answer from memory. Then, research the question to expand on your answer. Even if you feel you have answered the question completely on your own, there is always something more to learn.
+Answer the following questions.
 
-1. What is object destructuring?
+First, without external resources. Challenge yourself to answer from memory as if you were in a job interview.
 
-  Your answer: A shortcut for creating a variable that holds the full value of a location of a key nested within an object or array
-
-  Researched answer:
+Then, research the question to expand on your answer. Even if you feel you have answered the question completely, there is always something more to learn. Write your researched answer in your OWN WORDS.
 
 
+1. What are React lifecycle methods? Provide three examples.
 
-2. What is a DOM event?
-
-  Your answer: Document Object Model events are actions that occur in JavaScript as result of a user interaction. Typically DOM events are combined with functions that are executed when the event occurs.
+  Your answer: Life cycle of a React component, process it goes through as the page renders - 1) mounting, 2) updating, 3) unmounting
+  Examples) render(), componentDidMount(), constructor(), setState()
 
   Researched answer:
 
 
 
-3. What is the difference between a class and an object?
-
-  Your answer: A class is a blueprint for creating many objects, it is composed of both data and behaviors (information and methods), an object is an instance of a class
-
-  Researched answer:
-
-
-
-4. What is the difference between a HTML div and a span?
+2. What is the difference between a HTML/JSX div and a span?
 
   Your answer: divs are block elements (like having a line break before and after, they take the full view width) and spans are inline elements (they only take as much space as allotted, can be as small as one word within a paragraph)
 
@@ -34,19 +24,46 @@ Answer the following questions. First, without external resources. Challenge you
 
 
 
-5. What is React.Fragment (or <>) and why would you want to use it?
+3. What is a ternary operator in JavaScript?
 
-  Your answer: The syntax for returning multiple JSX tags by wrapping them in a neutral outer tag, <> </> is a shorthand for React.Fragment that achieves the same result, and it doesn't add any additional nodes to the HTML code
+  Your answer: Another way to write a conditional, operator that takes three operands (3 pieces)
+
+  condition ? true : false
 
   Researched answer:
 
 
 
-6. What are three options for creating responsive design?
+4. What are props in React?
 
-  Your answer: Flexbox, media queries, em/rem/%, grid layout
+  Your answer: Information passed from a higher component to a lower component, method (behavior) or state (static data)
 
-  rem/em both translate into pixels
+  Researched answer:
+
+
+
+5. What is `this` in JavaScript?
+
+  Your answer: A reference to a method or variable belonging to the class or object
+
+  Researched answer:
+
+
+
+6. STRETCH: What is an anonymous function in JavaScript?
+
+  Your answer: Function without a name, functions called using the variable name
+
+  Researched answer:
+
+
+
+7. STRETCH: What does it mean to create a responsive UI? What are three options for creating responsive design?
+
+  Your answer: Your app will still look good and function well no matter the screen size or orientation, media queries, grid, flexbox, rem/vh/vw/%
+
+  Researched answer: rem/em both translate into pixels
+
   All browsers have a small amount of base css
   When you put plain old HTML in the browser the text has a base pixel - usually a 16 point font
   So 1rem is that base font size
@@ -57,14 +74,16 @@ Answer the following questions. First, without external resources. Challenge you
 
   Just a bit of fun history: I was looking up the difference between rem and em and I learned that em is not an acronym like I originally thought. The origin is a standardization of typeface based on capital letter M.
 
-  Researched answer:
-
 
 
 ## Looking Ahead: Terms for Next Week
-- Object oriented programming - a programming model that organizes software design around data, or objects, rather than functions and logic
-- irb - Interactive RuBy, a way to run Ruby code in the console
-- Instance variable - a variable declaration that begins with @ making the variable available to the entire scope of the class/instances of the class rather than just within a single method
-- Ruby - a dynamic, scripting, open-source, object-oriented programming language
-- Class relationships - is_a, has_a, has_many, belongs_to describes relationships between classes/model classes
-- Getter and Setter methods in Ruby - setters define an instance variable and getters return the value of an instance variable
+
+1. Ruby: A dynamic, scripting, open-source, object-oriented programming language
+
+2. Object oriented programming: OOP, a programming model that organizes software design around data, or objects, rather than functions and logic
+
+3. RSpec: Testing framework for Ruby
+
+4. Ruby blocks: Anonymous functions passed to methods
+
+5. Ruby hashes: Collection of key value pairs
