@@ -1,6 +1,9 @@
 # ASSESSMENT 4: Interview Practice Questions
+Answer the following questions.
 
-Answer the following questions. First, without external resources. Challenge yourself to answer from memory. Then, research the question to expand on your answer. Even if you feel you have answered the question completely on your own, there is always something more to learn.  
+First, without external resources. Challenge yourself to answer from memory.
+
+Then, research the question to expand on your answer. Even if you feel you have answered the question completely on your own, there is always something more to learn. Write your researched answer in your OWN WORDS.  
 
 1. What is an instance variable in Ruby? How is it different from other variables?
 
@@ -35,14 +38,13 @@ Answer the following questions. First, without external resources. Challenge you
     - polymorphism - parent classes should be adaptable to many sub classes to keep the parent class reusable
     - inheritance - relationship between classes help create reusable code
 
-I just looked these up, so I am still learning about them so I'll tell you what I learned, but I don't necessarily think they are the most detailed answers.
     Tenants of Functional
     - pure function - functions should not have side effects, same input should produce the same output
     - referential transparency - if you replace a function with its output the program shouldn't change the program (related to pure functions)
     - immutability - state cannot be changed after it is created
     - functions as first class entities/higher order functions - functions can be passed as arguments
     - type systems - avoid type coercion by checking for data types in the function
-     
+
   Researched answer:
 
 
@@ -52,3 +54,25 @@ I just looked these up, so I am still learning about them so I'll tell you what 
   Your answer: Class is a blueprint or a template of an object, object is an instance of a class
 
   Researched answer:
+
+
+
+6. STRETCH: What is `attr_accessor`?
+
+  Your answer: Sets up getter and setter methods for all the instance variables
+
+  Researched answer:
+
+
+
+## Looking Ahead: Terms for Next Week
+
+1. PostgreSQL: An open-source, object-relational database management system
+
+2. Ruby on Rails: A MVC framework written in the Ruby programming language
+
+3. CRUD: Create, Read, Update, Delete
+
+4. ORM: Object Relational Mapping
+
+5. Active Record: The Rails ORM
