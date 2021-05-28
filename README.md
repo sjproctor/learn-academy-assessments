@@ -10,11 +10,11 @@ Build out of code challenges and short answers
 - [React Debugging Challenge](./Week-2-Assessment/react-challenge.html)
 - [Interview Prep Questions](./Week-2-Assessment/interview-questions.md)
 ### Week 3
-- [JavaScript Code Challenge](./Week-3-Assessment/code-challenges.js)
-- [React Commenting Challenge](./Week-3-Assessment/react-commenting.js)
+- [JavaScript Code Challenges with Jest](./Week-3-Assessment/code-challenges.test.js)
+- [React Debugging Challenge](./Week-3-Assessment/react-debugging.html)
 - [Interview Prep Questions](./Week-3-Assessment/interview-questions.md)
 ### Week 4
-- [JavaScript Code Challenge](./Week-4-Assessment/code-challenges.js)
+- [JavaScript Code Challenges with Jest](./Week-4-Assessment/code-challenges.test.js)
 - [Ruby Code Challenges](./Week-4-Assessment/code_challenges.rb)
 - [Interview Prep Questions](./Week-4-Assessment/interview-questions.md)
 ### Week 5
