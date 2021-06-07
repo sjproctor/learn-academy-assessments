@@ -133,3 +133,14 @@ const combineWithNoDup = (...array) => {
     return comboArray.indexOf(value) === index
   })
 }
+
+// Option2:
+// const combineWithNoDup = (...arrays) => {
+//   const merged = [].concat(...arrays)
+//   return merged.filter((value, index, array) => array.indexOf(value) === index)
+// }
+
+// Option3:
+// const combineWithNoDup = (...arrays) => {
+//   return arrays.flat().filter((value, index, array) => array.indexOf(value) === index)
+// }

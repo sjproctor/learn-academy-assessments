@@ -1,38 +1,43 @@
-# ASSESSMENT 5: Rails Practical Questions
+# ASSESSMENT 5: Database and Active Record Practical Questions
 
-1. What is the command to create a new Rails application with a Postgres database?
+1. What is SQL?
 
-rails new my_app -d postgresql -T
+  Structured Query Language, the collection of languages used to interact with a relational db.
 
+2. What the PostgreSQL query that would return all the content in a particular table?
 
-2. Explain each section of the following route:  get '/library/:id' => 'book#show'
+  SELECT * FROM table_name
 
-get - the http verb associated with the route
-library - the url path
-:id - the param of id to pass the appropriate information
-book - the name of the controller
-show - the name of the method in the controller
+3. What is the command to create a new Rails application with a PostgreSQL database?
 
+  $ rails new my_rails_app -d postgresql -T
 
-3. Oops, I forgot to add a foreign key to my model. Describe the steps to remedy this mistake.
+4. What is the command to generate a Rails model for a meals table with columns named breakfast, lunch, and dinner?
 
-- generate a migration called something like add_foreign_key_to_table_name
-- $ rails generate migration add_foreign_key_to_table_name
-- in *db/migrate* add a line to the change method: add_column :table_name :table_id :integer
-- $ rails db:migrate
+  $ rails g (generate) model Meal breakfast:string lunch:string dinner:string
 
+5. What is a migration? Why would you use one?
 
-4. What is the command to generate a Rails model for a person table with columns named shirt, pants, and shoes?
+  Migrations are use to edit the db. The db cannot be edited directly.
 
-$ rails generate model Person shirt:string pants:string shoes:string
+6. What is the command to generate a migration file?
 
+  $ rails g (generate) migration AddColumnToTable
 
-5. I want to add validations to the model from question 4 to ensure no one can make a new entry without data in all the columns. How do I do that?
+7. What is the naming convention for generating a Rails model? What is the naming convention for the table that is generated with this command?
 
-validates :shirt, :pants, :shoes, presence: true
+  Rails model: PascalCase, singular
+  Table: snake_case, plural
 
+8. What is the schema file in a Rails application? Can you modify the schema directly? Why or why not?
 
-6. What is the naming convention for generating a Rails model? What is the naming convention for the table that is generated with this command?
+  Schema is a representation of the db. You can't modify the schema because it is only a representation of the db. The way to change the db is through migrations.
 
-Rails model: PascalCase, singular
-Table: snake_case, plural
+9. What is the Rails console?
+
+  An irb session, build into the Rails environment, can interact with the model
+  $ rails c
+
+10. What is the Rails console command to see all the content in a particular table?
+
+  ModelClassName.all

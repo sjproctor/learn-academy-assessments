@@ -7,46 +7,36 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. Rails follows an MVC pattern. What does that mean?
 
-  Your answer: MVC is an architecture pattern for organizing an application. MVC stands for Model, View, Controller. The model layer is the database or business logic layer, the View is what the user sees and interacts with, the controller routes the application to the correct view and displays the correct information from the model.
+  MVC is an architecture pattern for organizing an application. MVC stands for Model, View, Controller. The model layer is the database or business logic layer, the View is what the user sees and interacts with, the controller routes the application to the correct view and displays the correct information from the model.
+
+2. What is a relational database? Are there other kinds of databases?
+
+  Your answer: Relational database has a structure that has rows and columns. There are also non-relational databases that use other data structures such as documents, snapshots, or key value pairs.
 
 
-2. What does it mean if an application has CRUD? What does CRUD stand for?
+3. What is object-relational mapping?
 
-  CRUD is an acronym that stands for Create, Read, Update, Delete. CRUD is used to describe the full experience of user functionality within an application.
-
-
-3. What is a migration? Why would you use one?
-
-  Migrations describe the shape of the database. Migrations are used to make edits to the schema. Migrations are generated in the command line and run with the command $ rails db:migrate. It also allows for version control within an application.
+  ORMs are interpreter languages that allow two incompatible languages to interact. For Ruby/Rails the ORM is for database languages is Active Record.
 
 
-4. Describe a possible relationship between a model called Person and a model called Computer. Based on your description, which model would hold the foreign key?
+4. What is a gem?
 
-  Your answer: A Person has_a Computer, a Computer belongs_to a Person. A Person has_many Computers, Computers belong_to a Person. A Person has_many Computers, a Computer has_many People. A Computer has_many People, a Person belong_to (is a user on) a Computer.
-
-  Foreign key always lives on the belongs_to side.
+  A package of code functionality written by another developer made available to the Ruby community. Gems can be used to avoid "reinventing the wheel".
 
 
-5. What is object-relational mapping?
+5. What are primary keys? Why are they important?
 
-  Your answer: ORMs are interpreter languages that allow two incompatible languages to interact. For Ruby/Rails the ORM is for database languages is Active Record.
-
-
-6. What is a gem?
-
-  Your answer: A package of code functionality written by another developer made available to the Ruby community. Gems can be used to avoid "reinventing the wheel".
-
-
-7. Why is it important to have validations in your application?
-
-  Your answer: Validations prevent dirty data from being stored in your database. They also increase security by only saving qualified user information.
-
+  Every instance in a db must be unique and since information can often be repeated, a primary key creates a unique identifier. Rails uses numbers.
 
 ## Looking Ahead: Terms for Next Week
-
 Research and define the following terms to the best of your ability.
-- RESTful routes - provides structure to define the http verbs and the routes to successfully provide CRUD actions
-- JSON - JavaScript Object Notation, collections of key:value pairs
-- API - Application Programming Interface is a website for computers
-- Endpoints - websites have pages while APIs have endpoints
-- Strong params - a controller method that is called by the post method that limits what is accepted by a user input
+
+1. RESTful routes: provides structure to define the http verbs and the routes to successfully provide CRUD actions
+
+2. JSON: JavaScript Object Notation, collections of key:value pairs
+
+3. Model validations: Validations ensure the information that gets added to a db is clean - meaning the correct data type, structure, and not left blank
+
+4. Strong params: a controller method that is called by the post method that limits what is accepted by a user input
+
+5. API: Application Programming Interface is a website for computers
