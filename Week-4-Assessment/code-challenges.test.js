@@ -18,6 +18,7 @@
 
 // a) Create a test with an expect statement using the variable provided.
 
+// Option 1:
 describe("shuffler", () => {
   var colors1 = ["purple", "blue", "green", "yellow", "pink"]
   // Pass in the exact input, but the output is unknown, so have to remove the first item from the array, pass in all the additional values, then sort the outcome so that it can be compared to any given output
@@ -31,10 +32,21 @@ describe("shuffler", () => {
   })
 })
 
+// Option 2:
+describe("shuffler", () => {
+  var colors1 = ["purple", "blue", "green", "yellow", "pink"]
+  var colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+  it("removes the first item from the array and shuffles the remaining content", () => {
+    expect(shuffler(colors1)).toEqual(expect.arrayContaining(["blue", "green", "yellow", "pink"]))
+    expect(shuffler(colors2)).toEqual(expect.arrayContaining(["indigo", "periwinkle", "ochre", "aquamarine", "saffron"]))
+  })
+})
+
+// Jest matcher: https://jest-bot.github.io/jest/docs/expect.html#expectarraycontainingarray
+
 // b) Create the function that makes the test pass.
 
 const shuffler = (array) => {
-  console.log(array)
   return array.slice(1).sort(() => Math.random() - 0.5)
 }
 
