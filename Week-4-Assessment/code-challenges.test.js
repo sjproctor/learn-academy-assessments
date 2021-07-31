@@ -43,6 +43,7 @@ describe("shuffler", () => {
 })
 
 // Jest matcher: https://jest-bot.github.io/jest/docs/expect.html#expectarraycontainingarray
+// Stack overflow iwth two options: https://stackoverflow.com/questions/32103252/expect-arrays-to-be-equal-ignoring-order
 
 // b) Create the function that makes the test pass.
 
