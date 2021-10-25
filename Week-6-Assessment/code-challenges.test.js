@@ -83,6 +83,6 @@ describe("cubed", () => {
 
 const cubed = (array) => {
   let anchor = 0
-  array.map(value => value**3).forEach(value => anchor += value)
+  array.forEach(value => anchor += value ** 3)
   return anchor
 }
